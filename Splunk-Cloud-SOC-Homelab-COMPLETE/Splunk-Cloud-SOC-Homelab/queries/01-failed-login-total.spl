@@ -1,2 +1,0 @@
-index=main sourcetype=soc_training EventCode=4625
-| stats count as total_failed_logins

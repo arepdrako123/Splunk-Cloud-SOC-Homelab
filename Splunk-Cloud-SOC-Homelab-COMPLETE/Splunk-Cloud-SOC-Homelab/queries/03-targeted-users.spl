@@ -1,3 +1,0 @@
-index=main sourcetype=soc_training EventCode=4625 src_ip="203.0.113.45"
-| stats count as failed_attempts by user
-| sort -failed_attempts

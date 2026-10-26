@@ -1,4 +1,0 @@
-index=main sourcetype=soc_training EventCode=4625 earliest=-10m latest=now
-| stats count as failed_attempts dc(user) as targeted_users by src_ip
-| where failed_attempts >= 10 AND targeted_users >= 3
-| sort -failed_attempts

@@ -1,2 +1,0 @@
-index=main sourcetype=soc_training EventCode=4625
-| stats dc(src_ip) as unique_source_ips
