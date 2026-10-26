@@ -1,0 +1,2 @@
+index=main sourcetype=soc_training EventCode=4625
+| stats dc(user) as targeted_users
