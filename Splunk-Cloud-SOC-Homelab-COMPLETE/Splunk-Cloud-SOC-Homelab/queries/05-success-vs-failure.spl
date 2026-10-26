@@ -1,0 +1,4 @@
+index=main sourcetype=soc_training src_ip="203.0.113.45" (EventCode=4624 OR EventCode=4625)
+| eval login_result=if(EventCode=4624,"Success","Failed")
+| table _time user EventCode login_result
+| sort _time
